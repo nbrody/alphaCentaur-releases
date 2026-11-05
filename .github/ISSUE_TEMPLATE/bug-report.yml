@@ -1,0 +1,37 @@
+name: Bug report
+description: Tell us about something that isn't working.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public and require a GitHub account. Please don't include private research, API keys, or personal information."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include what you expected and what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do before the problem appeared?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: AlphaCentaur version
+      description: Include the build number if available.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS
+        - Windows preview
+        - Linux preview
+        - iPad or browser
+        - Other
