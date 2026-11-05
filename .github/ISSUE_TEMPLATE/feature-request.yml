@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest an improvement to AlphaCentaur.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public and require a GitHub account. Please don't include private research, API keys, or personal information."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the task or problem you want to solve.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: Describe your idea, if you have one.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS
+        - Windows preview
+        - Linux preview
+        - iPad or browser
+        - Other
